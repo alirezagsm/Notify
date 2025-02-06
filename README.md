@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-Share content to your gotify endpoint.
+Share content from Chrome/Edge to your Gotify endpoint.
 </p>
 
 ## Installation 🛠️
