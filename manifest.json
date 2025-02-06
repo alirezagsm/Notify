@@ -1,0 +1,23 @@
+{
+	"manifest_version": 3,
+	"name": "GotifyShare",
+	"version": "1.0",
+	"description": "Share selected text or page URL to Gotify.",
+	"permissions": [
+		"storage",
+		"tabs",
+		"activeTab",
+		"contextMenus",
+		"scripting"
+	],
+	"background": {
+		"service_worker": "src/background.js"
+	},
+	"action": {
+		"default_popup": "src/popup/popup.html",
+		"default_icon": "images/GotifyShare.png"
+	},
+	"icons": {
+		"128": "images/GotifyShare.png"
+	}
+}
