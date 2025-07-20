@@ -7,11 +7,7 @@
 </h1>
 
 <p align="center">
-<<<<<<< HEAD
 Share content from Firefox/Chrome/Edge to your endpoint. 
-=======
-Share content from Chrome/Edge to your Gotify endpoint.
->>>>>>> 0dd935f33978b1bd6c163caae8bdd3a9eccb0b67
 </p>
 
 ## Install on Firefox 🛠️
