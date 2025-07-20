@@ -3,9 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 	const saveButton = document.getElementById("save");
 
 	// Load saved endpoint URL
-	chrome.storage.local.get(["gotifyEndpoint"], (data) => {
-		if (data.gotifyEndpoint) {
-			endpointInput.value = data.gotifyEndpoint;
+	chrome.storage.local.get(["notifyEndpoint"], (data) => {
+		if (data.notifyEndpoint) {
+			endpointInput.value = data.notifyEndpoint;
 		}
 	});
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	saveButton.addEventListener("click", function () {
 		const endpoint = endpointInput.value;
 		if (endpoint) {
-			chrome.storage.local.set({ gotifyEndpoint: endpoint }, () => {
+			chrome.storage.local.set({ notifyEndpoint: endpoint }, () => {
 				const notification = document.createElement("span");
 				notification.textContent = "Endpoint URL saved!";
 				notification.style.marginLeft = "10px";

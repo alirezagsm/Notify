@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Notify",
+    "version": "1.0",
+    "description": "Share selected text or page URL to your endpoint.",
+    "permissions": [
+        "storage",
+        "tabs",
+        "contextMenus",
+        "scripting",
+        "notifications"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "src/background.js"
+        ]
+    },
+    "action": {
+        "default_popup": "src/popup/popup.html",
+        "default_icon": "images/Notify.png"
+    },
+    "icons": {
+        "192": "images/Notify.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "Notify@addon.com"
+        }
+    }
+}

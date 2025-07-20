@@ -1,8 +1,8 @@
 {
 	"manifest_version": 3,
-	"name": "GotifyShare",
+	"name": "Notify",
 	"version": "1.0",
-	"description": "Share selected text or page URL to Gotify.",
+	"description": "Share selected text or page URL to your endpoint.",
 	"permissions": [
 		"storage",
 		"tabs",
@@ -15,9 +15,9 @@
 	},
 	"action": {
 		"default_popup": "src/popup/popup.html",
-		"default_icon": "images/GotifyShare.png"
+		"default_icon": "images/Notify.png"
 	},
 	"icons": {
-		"128": "images/GotifyShare.png"
+		"192": "images/Notify.png"
 	}
 }

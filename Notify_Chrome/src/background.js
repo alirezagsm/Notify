@@ -1,14 +1,14 @@
 chrome.runtime.onInstalled.addListener(() => {
 	chrome.contextMenus.create({
-		id: "gotifyShare",
-		title: "GotifyShare",
-		contexts: ["selection", "page", "image", "link"], // Added "link" context
+		id: "Notify",
+		title: "Notify",
+		contexts: ["selection", "page", "image", "link"],
 	});
 });
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-	chrome.storage.local.get(["gotifyEndpoint"], (data) => {
-		const endpoint = data.gotifyEndpoint;
+	chrome.storage.local.get(["notifyEndpoint"], (data) => {
+		const endpoint = data.notifyEndpoint;
 		if (!endpoint) {
 			chrome.action.openPopup();
 			return;
